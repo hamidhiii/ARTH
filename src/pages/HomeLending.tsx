@@ -1,3 +1,4 @@
+import GreenSection from "@/components/GreenSection/GreenSection";
 import HeaderBanner from "@/components/HeaderBanner/HeaderBanner";
 import OfferSection from "@/components/OfferSection.tsx/OfferSection";
 import SolutionsSection from "@/components/SolitionsSection/SolutionsSection";
@@ -10,6 +11,7 @@ export default function HomeLending() {
        <OfferSection/>
        <TariffsSection/>
        <SolutionsSection/>
+       <GreenSection/>
     </>
   )
 }
