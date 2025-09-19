@@ -3,7 +3,7 @@ import type { Tariff } from "@/constants/tarifsSection"
 
 export default function TariffsCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-[30px] justify-items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2  mt-[30px] justify-items-center">
       {tarifsSection.map(({ id, img, title, description }: Tariff) => (
         <div
           key={id}
