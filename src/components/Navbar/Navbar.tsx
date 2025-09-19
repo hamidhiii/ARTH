@@ -2,6 +2,7 @@ import { useState } from "react";
 import Menu from "./Menu";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "../../assets/Gemini_Generated_Image_5nvpty5nvpty5nvp.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -10,8 +11,8 @@ export default function Navbar() {
     <nav className="flex m-auto max-w-[1400px] pt-2 lg:justify-between md:justify-around items-center px-4">
       {/* Лого */}
       <div className="flex items-center gap-2">
-        <img src="" alt="" className="w-8 h-8" />
-        <h2 className="font-bold text-xl leading-7 text-[#111827]">AIRTH</h2>
+        <img src={logo} alt="" className="w-[150px]" />
+        {/* <h2 className="font-bold text-xl leading-7 text-[#111827]">AIRTH</h2> */}
       </div>
 
       {/* Десктопное меню */}
