@@ -1,10 +1,12 @@
 import { tarifsSection } from "@/constants/tarifsSection"
 import type { Tariff } from "@/constants/tarifsSection"
+import { useNavigate } from "react-router-dom"
 
 export default function TariffsCard() {
+  const navigate = useNavigate()
   return (
     <div className="grid grid-cols-1 md:grid-cols-2  mt-[30px] max-w-5xl mx-auto">
-      {tarifsSection.map(({ id, img, title, description }: Tariff) => (
+      {tarifsSection.map(({ id, img, title, description, link }: Tariff) => (
         <div
           key={id}
           className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl max-w-[400px] flex flex-col transition-shadow duration-300 w-full mx-auto"
@@ -19,7 +21,7 @@ export default function TariffsCard() {
               {description}
             </p>
 
-            <button className="self-end max-w-[140px] rounded-[100px] bg-[#2AFCD636] px-[16px] py-[10px] mt-auto cursor-pointer hover:bg-black hover:text-white">
+            <button onClick={() => navigate(link)} className="self-end max-w-[140px] rounded-[100px] bg-[#2AFCD636] px-[16px] py-[10px] mt-auto cursor-pointer hover:bg-black hover:text-white">
               LEARN MORE
             </button>
           </div>
