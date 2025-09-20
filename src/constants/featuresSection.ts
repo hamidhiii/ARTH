@@ -1,9 +1,9 @@
-import drone1 from "../assets/Artboard 4.jpg"
-import drone2 from "../assets/cubesat-image02.jpg"
-import drone3 from "../assets/Artboard 5.jpg"
-import icon1 from '../assets/i (5).png'
-import icon2 from '../assets/svg (1).png'
-import icon3 from '../assets/svg (2).png'
+import drone1 from "../assets/HomeLending/Artboard 4.jpg"
+import drone2 from "../assets/HomeLending/cubesat-image02.jpg"
+import drone3 from "../assets/HomeLending/Artboard 5.jpg"
+import icon1 from '../assets/HomeLending/i (5).png'
+import icon2 from '../assets/HomeLending/svg (1).png'
+import icon3 from '../assets/HomeLending/svg (2).png'
 export interface Feature {
   id: number
   title: string

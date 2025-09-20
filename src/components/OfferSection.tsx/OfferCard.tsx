@@ -2,7 +2,7 @@ import { offerCards } from "@/constants/offerSection";
 
 export default function OfferCard() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16 lg:ml-24 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center mt-16  gap-6">
         {offerCards.map(({ id, title, description, icon }) => (
           <div
             key={id}

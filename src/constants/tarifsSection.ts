@@ -1,5 +1,5 @@
-import ecoscan from '../assets/Artboard 5.jpg'
-import cubesat from '../assets/cubesat-image02.jpg'
+import ecoscan from '../assets/HomeLending/Artboard 5.jpg'
+import cubesat from '../assets/HomeLending/cubesat-image02.jpg'
 
 export interface Tariff {
   id: number

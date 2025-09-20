@@ -1,5 +1,5 @@
 import { BsLinkedin, BsTwitter, BsYoutube } from 'react-icons/bs'
-import logo from '../../assets/Gemini_Generated_Image_5nvpty5nvpty5nvp.png'
+import logo from '../../assets/HomeLending/Gemini_Generated_Image_5nvpty5nvpty5nvp.png'
 import { Link } from 'react-router-dom'
 export default function Footer() {
   return (

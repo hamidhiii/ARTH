@@ -1,10 +1,10 @@
 // icons
-import icon1 from '../assets/i.png'
-import icon2 from '../assets/i (1).png'
-import icon3 from '../assets/Frame.png'
-import icon4 from '../assets/svg.png'
-import icon5 from '../assets/Frame (1).png'
-import icon6 from '../assets/Vector.png'
+import icon1 from '../assets/HomeLending/i.png'
+import icon2 from '../assets/HomeLending/i (1).png'
+import icon3 from '../assets/HomeLending/Frame.png'
+import icon4 from '../assets/HomeLending/svg.png'
+import icon5 from '../assets/HomeLending/Frame (1).png'
+import icon6 from '../assets/HomeLending/Vector.png'
 export const offerCards = [
     {
         id: 1,

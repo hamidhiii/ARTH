@@ -1,4 +1,4 @@
-import banner from "../../assets/Без_названия2__1_-removebg-preview (1).png"
+import banner from "../../assets/HomeLending/Без_названия2__1_-removebg-preview (1).png"
 export default function HeaderBanner() {
   return (
     <section className="bg-[#05966945]">
