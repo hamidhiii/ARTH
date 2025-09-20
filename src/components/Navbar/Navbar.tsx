@@ -2,7 +2,7 @@ import { useState } from "react";
 import Menu from "./Menu";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../../assets/Gemini_Generated_Image_5nvpty5nvpty5nvp.png"
+import logo from "../../assets/HomeLending/Gemini_Generated_Image_5nvpty5nvpty5nvp.png"
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

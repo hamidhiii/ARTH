@@ -1,9 +1,9 @@
-import icon1 from '../assets/sun.png'
-import icon2 from '../assets/flash.png'
-import icon3 from '../assets/svg.png'
-import icon4 from '../assets/car.png'
-import icon5 from '../assets/Vector.png'
-import icon6 from '../assets/cloud.png'
+import icon1 from '../assets/HomeLending/sun.png'
+import icon2 from '../assets/HomeLending/flash.png'
+import icon3 from '../assets/HomeLending/svg.png'
+import icon4 from '../assets/HomeLending/car.png'
+import icon5 from '../assets/HomeLending/Vector.png'
+import icon6 from '../assets/HomeLending/cloud.png'
 
 export const GREEN_SECTION = [
     {

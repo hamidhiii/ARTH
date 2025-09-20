@@ -4,7 +4,7 @@ import TariffsCard from "./TariffsCard";
 export default function TariffsSection() {
   return (
     <section className="bg-[#05966936] py-[80px]">
-       <div className="max-w-[1400px]">
+       <div className="">
        <Text title="Tariffs"
         description="Airth unites technology with environmental protection."/>
         <TariffsCard/>

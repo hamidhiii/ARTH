@@ -3,11 +3,11 @@ import type { Tariff } from "@/constants/tarifsSection"
 
 export default function TariffsCard() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2  mt-[30px] justify-items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2  mt-[30px] max-w-5xl mx-auto">
       {tarifsSection.map(({ id, img, title, description }: Tariff) => (
         <div
           key={id}
-          className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl max-w-[400px] flex flex-col transition-shadow duration-300 w-full"
+          className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl max-w-[400px] flex flex-col transition-shadow duration-300 w-full mx-auto"
         >
           <img src={img} alt={title} className="w-full h-48 object-cover" />
 
