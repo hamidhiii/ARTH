@@ -3,9 +3,17 @@ import Menu from "./Menu";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../../assets/HomeLending/Gemini_Generated_Image_5nvpty5nvpty5nvp.png"
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate()
+
+  const signin = () => {
+    setOpen(false)
+    navigate('/signin')
+  }
+  
 
   return (
     <nav className="flex m-auto max-w-[1400px] pt-2 lg:justify-between md:justify-around items-center px-4">
@@ -21,7 +29,7 @@ export default function Navbar() {
       </div>
 
       {/* Кнопка */}
-      <button className="hidden md:block bg-[#2AFCD636] cursor-pointer hover:bg-[#0F172A] hover:text-white rounded-lg px-5 py-3 font-medium text-base leading-6 text-black">
+      <button onClick={signin} className="hidden md:block bg-[#2AFCD636] cursor-pointer hover:bg-[#0F172A] hover:text-white rounded-lg px-5 py-3 font-medium text-base leading-6 text-black">
         Get Started
       </button>
 
@@ -52,7 +60,7 @@ export default function Navbar() {
             className="absolute top-14 left-0 w-full bg-white shadow-lg p-4 flex flex-col gap-4 md:hidden z-50 rounded-b-2xl"
           >
             <Menu />
-            <button className="bg-[#2AFCD636] cursor-pointer hover:bg-[#0F172A] hover:text-white rounded-lg px-5 py-3 font-medium text-base leading-6 text-black">
+            <button onClick={signin} className="bg-[#2AFCD636] cursor-pointer hover:bg-[#0F172A] hover:text-white rounded-lg px-5 py-3 font-medium text-base leading-6 text-black">
               Get Started
             </button>
           </motion.div>
