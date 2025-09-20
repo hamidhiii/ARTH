@@ -17,13 +17,13 @@ export default function SolutionCard() {
               <img
                 src={image}
                 alt={title}
-                className="w-full h-[300px] rounded-lg shadow-md object-cover"
+                className="w-full h-[300px] rounded-lg shadow-lg object-cover"
               />
             </div>
 
             {/* Текст (на мобилке всегда снизу) */}
             <div
-              className={`bg-white h-[300px] rounded-xl p-6 shadow-md
+              className={`bg-white h-[300px] rounded-xl p-6 shadow-lg
                 ${index % 2 === 1 ? "md:order-2" : "md:order-1"}`}
             >
               <div className="flex items-center gap-2 mb-3">
