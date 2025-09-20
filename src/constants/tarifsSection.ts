@@ -6,7 +6,7 @@ export interface Tariff {
   img: string
   title: string
   description: string
-  link?: string
+  link: string
 }
 
 export const tarifsSection: Tariff[] = [
