@@ -2,12 +2,12 @@ import { EyeClosedIcon, EyeIcon } from "lucide-react"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { auth } from "@/Firebase"
-import { signInWithEmailAndPassword } from "firebase/auth"
+import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, OAuthProvider } from "firebase/auth"
+
 import google from '../../assets/991dbcd1cd4ad01aff8ed5ef17bdb52fc404e431.png'
 import yandex from '../../assets/91a529810beaf35bb8b092ca0abba3b9318f9789.png'
 import apple from '../../assets/5897954b8625aea5e9793b444f44772a24de460a.png'
 import facebook from '../../assets/9a21c2082176bba4eac3e968babcde8fbe501c76.png'
-
 
 export default function LoginForm() {
   const [email, setEmail] = useState("")
@@ -15,9 +15,9 @@ export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false)
   const navigate = useNavigate()
 
+  // 🔹 Email + Password login
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-
     try {
       await signInWithEmailAndPassword(auth, email, password)
       alert("✅ Успешный вход!")
@@ -30,6 +30,32 @@ export default function LoginForm() {
       } else {
         alert("❌ Ошибка: " + err.message)
       }
+    }
+  }
+
+  // 🔹 Google login
+  const handleGoogleLogin = async () => {
+    try {
+      const provider = new GoogleAuthProvider()
+      await signInWithPopup(auth, provider)
+      alert("✅ Успешный вход через Google!")
+      navigate("/admin")
+    } catch (err) {
+      console.error("Ошибка Google входа:", err)
+      alert("❌ Ошибка Google входа")
+    }
+  }
+
+  // 🔹 Apple login
+  const handleAppleLogin = async () => {
+    try {
+      const provider = new OAuthProvider("apple.com")
+      await signInWithPopup(auth, provider)
+      alert("✅ Успешный вход через Apple!")
+      navigate("/admin")
+    } catch (err) {
+      console.error("Ошибка Apple входа:", err)
+      alert("❌ Ошибка Apple входа")
     }
   }
 
@@ -72,29 +98,41 @@ export default function LoginForm() {
         >
           Login
         </button>
-      <div className="flex items-center my-6">
-            <div className="flex-grow border-t border-gray-300"></div>
-            <span className="mx-2 text-gray-200 text-sm">-or-</span>
-            <div className="flex-grow border-t border-gray-300"></div>
-          </div>
-  
-          {/* Соц-кнопки */}
-          <div className="flex justify-center gap-5">
-            <button className="bg-white w-10 h-10 flex hover:cursor-pointer items-center justify-center rounded-full shadow">
-              <img src={google} alt="Google" className="w-6 h-6" />
-            </button>
-            <button className="bg-white w-10 h-10 flex hover:cursor-pointer items-center justify-center rounded-full shadow">
-              <img src={yandex} alt="Yandex" className="w-6 h-6" />
-            </button>
-            <button className="bg-white w-10 h-10 flex hover:cursor-pointer items-center justify-center rounded-full shadow">
-              <img src={apple} alt="Apple" className="w-6 h-6" />
-            </button>
-            <button className="bg-white w-10 h-10 flex hover:cursor-pointer items-center justify-center rounded-full shadow">
-              <img src={facebook} alt="Facebook" className="w-6 h-6" />
-            </button>
-          </div>
-      </form>
 
+        {/* Разделитель */}
+        <div className="flex items-center my-6">
+          <div className="flex-grow border-t border-gray-300"></div>
+          <span className="mx-2 text-gray-200 text-sm">-or-</span>
+          <div className="flex-grow border-t border-gray-300"></div>
+        </div>
+
+        {/* Соц-кнопки */}
+        <div className="flex justify-center gap-5">
+          <button
+            type="button"
+            onClick={handleGoogleLogin}
+            className="bg-white w-10 h-10 flex hover:cursor-pointer items-center justify-center rounded-full shadow"
+          >
+            <img src={google} alt="Google" className="w-6 h-6" />
+          </button>
+
+          <button className="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow">
+            <img src={yandex} alt="Yandex" className="w-6 h-6" />
+          </button>
+
+          <button
+            type="button"
+            onClick={handleAppleLogin}
+            className="bg-white w-10 h-10 flex hover:cursor-pointer items-center justify-center rounded-full shadow"
+          >
+            <img src={apple} alt="Apple" className="w-6 h-6" />
+          </button>
+
+          <button className="bg-white w-10 h-10 flex items-center justify-center rounded-full shadow">
+            <img src={facebook} alt="Facebook" className="w-6 h-6" />
+          </button>
+        </div>
+      </form>
     </div>
   )
 }

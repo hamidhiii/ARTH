@@ -14,7 +14,7 @@ export default function SignIn() {
       <div className="flex justify-center bg-teal-500 gap-4 pt-6">
         <button
           onClick={() => setIsSignIn(true)}
-          className={`px-6  py-2 rounded-md font-medium ${
+          className={` cursor-pointer px-6  py-2 rounded-md font-medium ${
             isSignIn ? "bg-emerald-600 text-white" : "bg-gray-200 text-gray-700"
           }`}
         >
@@ -22,7 +22,7 @@ export default function SignIn() {
         </button>
         <button
           onClick={() => setIsSignIn(false)}
-          className={`px-6 py-2 rounded-md font-medium ${
+          className={`cursor-pointer px-6 py-2 rounded-md font-medium ${
             !isSignIn ? "bg-emerald-600 text-white" : "bg-gray-200 text-gray-700"
           }`}
         >
