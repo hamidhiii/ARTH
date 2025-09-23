@@ -6,6 +6,7 @@ import SignIn from "./components/SignIn/SignIn"
 import Dashboard from "./pages/Dashboard"
 import PublicLayout from "./layots/PublicLayout"
 import AdminLayout from "./layots/AdminLayout"
+import Analitycs from "./pages/Analitycs"
 
 
 export default function App() {
@@ -23,7 +24,7 @@ export default function App() {
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
         <Route path="tariffs" element={<div>Tariffs page</div>} />
-        <Route path="analytics" element={<div>Analytics page</div>} />
+        <Route path="analytics" element={<Analitycs/>} />
         <Route path="reports" element={<div>Reports page</div>} />
         <Route path="live-map" element={<div>Live map page</div>} />
       </Route>
