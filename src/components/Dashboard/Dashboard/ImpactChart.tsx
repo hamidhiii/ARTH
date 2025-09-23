@@ -1,20 +1,28 @@
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from "recharts"
+import {
+  LineChart,
+  Line,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts"
 import { chartData } from "@/constants/dashboard"
 
 export default function ImpactChart() {
   return (
     <div className="bg-white rounded-lg shadow p-4 col-span-2">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="font-semibold text-gray-800 text-sm sm:text-base lg:text-lg">
-          Environmental Impact Trends
-        </h2>
-        <div className="flex gap-2 text-xs sm:text-sm">
+        <h2 className="font-semibold text-gray-800">Environmental Impact Trends</h2>
+        <div className="flex gap-2 text-xs">
           <button className="px-2 py-1 bg-green-100 text-green-600 rounded">7D</button>
           <button className="px-2 py-1 text-gray-500">30D</button>
           <button className="px-2 py-1 text-gray-500">90D</button>
         </div>
       </div>
 
+      {/* Responsive Chart */}
       <div className="w-full h-64 sm:h-72 lg:h-80">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData}>

@@ -5,8 +5,8 @@ import { stats } from "@/constants/dashboard"
 
 export default function Dashboard() {
   return (
-    <div className="p-4 sm:p-6 lg:p-8">
-      <h1 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800">
+    <div className="w-full max-w-7xl mx-auto">
+      <h1 className="text-base sm:text-lg lg:text-2xl font-bold text-gray-800">
         Environmental Impact Dashboard
       </h1>
       <p className="text-xs sm:text-sm text-gray-500 mb-6">
@@ -34,3 +34,4 @@ export default function Dashboard() {
     </div>
   )
 }
+  
