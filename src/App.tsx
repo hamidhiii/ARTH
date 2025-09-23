@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard"
 import PublicLayout from "./layots/PublicLayout"
 import AdminLayout from "./layots/AdminLayout"
 import Analitycs from "./pages/Analitycs"
+import Reports from "./pages/Reports"
 
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
         <Route index element={<Dashboard />} />
         <Route path="tariffs" element={<div>Tariffs page</div>} />
         <Route path="analytics" element={<Analitycs/>} />
-        <Route path="reports" element={<div>Reports page</div>} />
+        <Route path="reports" element={<Reports/>} />
         <Route path="live-map" element={<div>Live map page</div>} />
       </Route>
     </Routes>
