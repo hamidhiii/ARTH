@@ -8,6 +8,7 @@ import PublicLayout from "./layots/PublicLayout"
 import AdminLayout from "./layots/AdminLayout"
 import Analitycs from "./pages/Analitycs"
 import Reports from "./pages/Reports"
+import MissionsPage from "./pages/MissionMap"
 
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
         <Route path="tariffs" element={<div>Tariffs page</div>} />
         <Route path="analytics" element={<Analitycs/>} />
         <Route path="reports" element={<Reports/>} />
-        <Route path="live-map" element={<div>Live map page</div>} />
+        <Route path="live-map" element={<MissionsPage/>} />
       </Route>
     </Routes>
   )
