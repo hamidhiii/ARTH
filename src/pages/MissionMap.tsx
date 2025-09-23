@@ -1,15 +1,14 @@
-import MissionCard from "@/components/Dashboard/Missions/MissionCard";
-import MissionFilters from "@/components/Dashboard/Missions/MissionFilters";
-import MissionLegend from "@/components/Dashboard/Missions/MissionLegend";
-import MissionMap from "@/components/Dashboard/Missions/MissionMap";
-import MissionStats from "@/components/Dashboard/Missions/MissionStats";
-
+import MissionCard from "@/components/Dashboard/Missions/MissionCard"
+import MissionFilters from "@/components/Dashboard/Missions/MissionFilters"
+import MissionLegend from "@/components/Dashboard/Missions/MissionLegend"
+import MissionMap from "@/components/Dashboard/Missions/MissionMap"
+import MissionStats from "@/components/Dashboard/Missions/MissionStats"
 
 export default function MissionsPage() {
   return (
-    <div className="flex h-screen">
+    <div className="flex flex-col md:flex-row h-screen">
       {/* Sidebar */}
-      <div className="w-72 bg-white border-r p-4 flex flex-col">
+      <div className="w-full md:w-72 bg-white border-b md:border-r md:border-b-0 p-4 flex-shrink-0">
         <MissionFilters />
         <h2 className="text-sm font-semibold mt-4">Active Missions</h2>
         <MissionCard />
