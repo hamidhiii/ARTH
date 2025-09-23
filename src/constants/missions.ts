@@ -1,38 +1,39 @@
 // constants/missions.ts
 export const missions = [
-    {
-      id: 1,
-      name: "Amazon Project",
-      description: "Reforestation mission covering 2,500 hectares",
-      lat: -3.4653,
-      lng: -62.2159,
-      progress: 68,
-      status: "Active",
-      team: "12 members",
-      category: "Reforestation",
-    },
-    {
-      id: 2,
-      name: "Ocean Cleanup",
-      description: "Pacific plastic removal operation",
-      lat: 14.5995,
-      lng: 120.9842,
-      progress: 45,
-      status: "Active",
-      vessels: "3 active",
-      category: "Pollution Control",
-    },
-    {
-      id: 3,
-      name: "Sustainable Farming",
-      description: "Organic agriculture initiative",
-      lat: 35.8617,
-      lng: 104.1954,
-      progress: 12,
-      status: "Planning",
-      category: "Agriculture",
-    },
-  ]
+  {
+    id: 1,
+    name: "Jizzakh Green Project",
+    description: "Reforestation mission near Jizzakh region",
+    lat: 40.1160, // Джизак
+    lng: 67.8422,
+    progress: 68,
+    status: "Active",
+    team: "12 members",
+    category: "Reforestation",
+  },
+  {
+    id: 2,
+    name: "Tashkent River Cleanup",
+    description: "Pollution control along Chirchiq river",
+    lat: 41.2995, // Ташкент
+    lng: 69.2401,
+    progress: 45,
+    status: "Active",
+    vessels: "3 active",
+    category: "Pollution Control",
+  },
+  {
+    id: 3,
+    name: "Bukhara Agro Initiative",
+    description: "Sustainable farming in Bukhara region",
+    lat: 39.7670, // Бухара
+    lng: 64.4550,
+    progress: 12,
+    status: "Planning",
+    category: "Agriculture",
+  },
+]
+
   
   export const missionStats = {
     total: 26,

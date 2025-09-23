@@ -36,7 +36,7 @@ export default function Sidebar() {
         <div>
           <h4 className="text-xs text-gray-400 mb-2">Tariffs</h4>
           <NavLink
-            to="/admin/ecoscan"
+            to="/admin/tariffs/ecoscan"
             className={({ isActive }) =>
               `block px-3 py-2 rounded-md ${
                 isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"
@@ -46,7 +46,7 @@ export default function Sidebar() {
             EcoScan
           </NavLink>
           <NavLink
-            to="/admin/cubesat"
+            to="/admin/tariffs/cubesat"
             className={({ isActive }) =>
               `block px-3 py-2 rounded-md ${
                 isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"

@@ -9,6 +9,7 @@ import AdminLayout from "./layots/AdminLayout"
 import Analitycs from "./pages/Analitycs"
 import Reports from "./pages/Reports"
 import MissionsPage from "./pages/MissionMap"
+import EcoScan from "./pages/Ecoscan"
 
 
 export default function App() {
@@ -29,6 +30,7 @@ export default function App() {
         <Route path="analytics" element={<Analitycs/>} />
         <Route path="reports" element={<Reports/>} />
         <Route path="live-map" element={<MissionsPage/>} />
+        <Route path="tariffs/Ecoscan" element={<EcoScan/>} />
       </Route>
     </Routes>
   )
