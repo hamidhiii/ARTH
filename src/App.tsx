@@ -11,6 +11,7 @@ import Reports from "./pages/Reports"
 import MissionsPage from "./pages/MissionMap"
 import EcoScan from "./pages/Ecoscan"
 import CubeSatPage from "./pages/CubeSatPage"
+import Tariffs from "./components/Dashboard/Tariffs/Tariffs"
 
 
 export default function App() {
@@ -27,7 +28,7 @@ export default function App() {
       {/* Админка */}
       <Route path="/admin" element={<AdminLayout />}>
         <Route index element={<Dashboard />} />
-        <Route path="tariffs" element={<div>Tariffs page</div>} />
+        <Route path="tariffs" element={<Tariffs/>} />
         <Route path="analytics" element={<Analitycs/>} />
         <Route path="reports" element={<Reports/>} />
         <Route path="live-map" element={<MissionsPage/>} />
