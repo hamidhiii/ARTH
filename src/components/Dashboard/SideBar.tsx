@@ -11,6 +11,7 @@ export default function Sidebar() {
           <h4 className="text-xs text-gray-400 mb-2">Overview</h4>
           <NavLink
             to="/admin"
+            end
             className={({ isActive }) =>
               `flex items-center gap-2 px-3 py-2 rounded-md font-medium ${
                 isActive
@@ -25,7 +26,9 @@ export default function Sidebar() {
             to="/admin/live-map"
             className={({ isActive }) =>
               `flex items-center gap-2 px-3 py-2 rounded-md ${
-                isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"
+                isActive
+                  ? "bg-green-100 text-green-600"
+                  : "text-gray-600 hover:text-black"
               }`
             }
           >
@@ -39,7 +42,9 @@ export default function Sidebar() {
             to="/admin/tariffs/ecoscan"
             className={({ isActive }) =>
               `block px-3 py-2 rounded-md ${
-                isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"
+                isActive
+                  ? "bg-green-100 text-green-600"
+                  : "text-gray-600 hover:text-black"
               }`
             }
           >
@@ -49,7 +54,9 @@ export default function Sidebar() {
             to="/admin/tariffs/cubesat"
             className={({ isActive }) =>
               `block px-3 py-2 rounded-md ${
-                isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"
+                isActive
+                  ? "bg-green-100 text-green-600"
+                  : "text-gray-600 hover:text-black"
               }`
             }
           >
@@ -63,7 +70,9 @@ export default function Sidebar() {
             to="/admin/analytics"
             className={({ isActive }) =>
               `block px-3 py-2 rounded-md ${
-                isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"
+                isActive
+                  ? "bg-green-100 text-green-600"
+                  : "text-gray-600 hover:text-black"
               }`
             }
           >
@@ -73,7 +82,9 @@ export default function Sidebar() {
             to="/admin/reports"
             className={({ isActive }) =>
               `block px-3 py-2 rounded-md ${
-                isActive ? "bg-green-100 text-green-600" : "text-gray-600 hover:text-black"
+                isActive
+                  ? "bg-green-100 text-green-600"
+                  : "text-gray-600 hover:text-black"
               }`
             }
           >

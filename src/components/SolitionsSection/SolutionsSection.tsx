@@ -3,7 +3,7 @@ import SolutionCard from "./SolutionCard";
 
 export default function SolutionsSection() {
   return (
-    <section className="bg-[#05966936] py-[80px]">
+    <section id="solutions" className="bg-[#05966936] py-[80px]">
         <div className=" justify-center">
         <Text 
         title="AIRTH Solutions" 

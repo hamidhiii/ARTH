@@ -8,13 +8,14 @@ export const stats = [
 ]
 
 export const chartData = [
-  { month: "Jan", value: 400 },
-  { month: "Feb", value: 600 },
-  { month: "Mar", value: 800 },
-  { month: "Apr", value: 500 },
-  { month: "May", value: 900 },
-  { month: "Jun", value: 1200 },
+  { month: "Jan", trees: 400, co2: 240, yield: 80 },
+  { month: "Feb", trees: 600, co2: 300, yield: 85 },
+  { month: "Mar", trees: 800, co2: 500, yield: 90 },
+  { month: "Apr", trees: 500, co2: 200, yield: 70 },
+  { month: "May", trees: 900, co2: 600, yield: 95 },
+  { month: "Jun", trees: 1200, co2: 750, yield: 100 },
 ]
+
 
 export const liveActivity = [
   { id: 1, status: "Amazon Reforestation", location: "Brazil", time: "2 min ago", change: "+247 trees", color: "text-green-600" },
