@@ -35,6 +35,7 @@ export default function Topbar() {
         <div className="hidden md:flex gap-6 text-sm font-medium text-gray-600">
           <NavLink
             to="/admin"
+            end
             className={({ isActive }) =>
               isActive ? "text-green-600" : "hover:text-black"
             }
