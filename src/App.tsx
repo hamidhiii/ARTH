@@ -12,6 +12,8 @@ import MissionsPage from "./pages/MissionMap"
 import EcoScan from "./pages/Ecoscan"
 import CubeSatPage from "./pages/CubeSatPage"
 import Tariffs from "./components/Dashboard/Tariffs/Tariffs"
+import { SpeedInsights } from '@vercel/speed-insights/react';
+
 
 
 export default function App() {
@@ -35,6 +37,7 @@ export default function App() {
         <Route path="tariffs/Ecoscan" element={<EcoScan/>} />
         <Route path="tariffs/Cubesat" element={<CubeSatPage/>} />
       </Route>
+      <SpeedInsights />
     </Routes>
   )
 }
