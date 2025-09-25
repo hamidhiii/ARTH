@@ -12,7 +12,6 @@ import MissionsPage from "./pages/MissionMap"
 import EcoScan from "./pages/Ecoscan"
 import CubeSatPage from "./pages/CubeSatPage"
 import Tariffs from "./components/Dashboard/Tariffs/Tariffs"
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 
 
