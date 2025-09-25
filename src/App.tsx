@@ -37,7 +37,7 @@ export default function App() {
         <Route path="tariffs/Ecoscan" element={<EcoScan/>} />
         <Route path="tariffs/Cubesat" element={<CubeSatPage/>} />
       </Route>
-      <SpeedInsights />
+      
     </Routes>
   )
 }
